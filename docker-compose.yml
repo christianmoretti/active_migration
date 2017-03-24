@@ -3,6 +3,6 @@ version: '2'
 services:
   activemigration:
     build: .
-    command: /bin/bash
+    entrypoint: /bin/bash
     volumes:
       - .:/usr/src/active_migration
