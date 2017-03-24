@@ -6,7 +6,7 @@ ENV APP_HOME /usr/src/active_migration
 
 RUN mkdir -p $APP_HOME
 
-COPY Gemfile* $APP_HOME
+COPY Gemfile* $APP_HOME/
 WORKDIR $APP_HOME
 
 ENV BUNDLE_GEMFILE=$APP_HOME/Gemfile \
