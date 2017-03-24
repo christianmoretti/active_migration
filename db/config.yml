@@ -1,0 +1,20 @@
+default: &default
+  adapter: sqlserver
+  encoding: unicode
+  pool: 5
+  host: server_database_ip
+  database: default_name_database
+  username: user
+  password: pass
+
+test:
+  <<: *default
+  database: my_database_test
+
+development:
+  <<: *default
+  database: my_database_development
+
+production:
+  <<: *default
+  database: my_database_production
